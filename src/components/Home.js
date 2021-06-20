@@ -27,7 +27,7 @@ export default function Home() {
 
     function fetchActiveData() {
         setSpin(true)
-        fetch("http://localhost:4000/users")
+        fetch("https://gogaga-back.herokuapp.com/users")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -55,7 +55,7 @@ export default function Home() {
             const Location = location.current.value
 
 
-            fetch('http://localhost:4000/users', {
+            fetch('https://gogaga-back.herokuapp.com/users', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
